@@ -24,3 +24,17 @@
 // const func: () => string = () => {
 //   return "大脚";
 // };
+
+/**
+ * ts-node 遵循 tsconfig.json 规则
+ */
+
+//tsconfig.json
+
+// function will(name) {
+//   return name;
+// }
+
+const will: string = null;
+
+export const name = "willaaa";
