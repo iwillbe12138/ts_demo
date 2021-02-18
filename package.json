@@ -1,0 +1,26 @@
+{
+  "exampleGratia":"parcel index.html -public-url ./",
+  "name": "ts_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+
+    
+    "test": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwillbe12138/ts_demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwillbe12138/ts_demo/issues"
+  },
+  "homepage": "https://github.com/iwillbe12138/ts_demo#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}

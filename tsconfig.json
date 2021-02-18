@@ -1,6 +1,6 @@
 {
-  "include":["./src/demo.ts"],//什么文件需要tsc编译
-  // "exclude":["demo2.ts"],//什么文件不需要tsc编译
+  "include":["./src/page.ts"],//什么文件需要tsc编译
+  // "exclude":[],//什么文件不需要tsc编译
   // "files":["demo.ts"],//什么文件需要tsc编译 暂时不知道和include什么区别
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
@@ -8,7 +8,8 @@
     /* Basic Options */
     // "incremental": true,                   /* Enable incremental compilation */
     "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
-    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "module": "amd",
+    // "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
     // "lib": [],                             /* Specify library files to be included in the compilation. */
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
@@ -16,7 +17,7 @@
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,//默认开启 信息文件 tsc转换后代码文件位置 对应 转换前源码位置，排查错误，TS里哪里出错，一般部署时候打开     /* Generates corresponding '.map' file. */
-    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+    "outFile": "./build/page.js",           /* Concatenate and emit output to single file. */
     "outDir": "./build",    //编译文件 js         /* Redirect output structure to the directory. */
     "rootDir": "./src",    //入口文件 源码ts        /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                     /* Enable project compilation */
@@ -38,8 +39,8 @@
     // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
 
     /* Additional Checks */
-    "noUnusedLocals": true,  //未使用的变量 编译时过滤提示报错  提示作用  节省内存      /* Report errors on unused locals. */
-    "noUnusedParameters": true, //未使用的方法 编译时过滤提示报错  提示作用           /* Report errors on unused parameters. */
+    // "noUnusedLocals": true,  //未使用的变量 编译时过滤提示报错  提示作用  节省内存      /* Report errors on unused locals. */
+    // "noUnusedParameters": true, //未使用的方法 编译时过滤提示报错  提示作用           /* Report errors on unused parameters. */
     // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
     // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
     // "noUncheckedIndexedAccess": true,      /* Include 'undefined' in index signature results */
